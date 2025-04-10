@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "machinery:block/electrical_furnace_block"
+    }
+  }
+}
