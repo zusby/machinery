@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "machinery:aluminum_ore",
+    "machinery:aluminum_block",
+    "machinery:electrical_furnace_block"
+  ]
+}

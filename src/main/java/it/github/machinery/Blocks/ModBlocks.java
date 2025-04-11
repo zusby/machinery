@@ -1,11 +1,13 @@
 package it.github.machinery.Blocks;
 
 import it.github.machinery.Items.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.BlockCollisions;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -24,10 +26,18 @@ public class ModBlocks {
             registerBlock("electrical_furnace_block",
                     ()->new Block(BlockBehaviour.Properties.of()
                             .mapColor(MapColor.METAL)
+                            .requiresCorrectToolForDrops()
                             .sound(SoundType.VAULT)));
 
     public static final DeferredBlock<Block> ALUMINUM_ORE =
-            registerBlock("aluminum_ore", ()->new Block(BlockBehaviour.Properties.of()
+            registerBlock("aluminum_ore", ()-> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+            ));
+
+    public static final DeferredBlock<Block> ALUMINUM_BLOCK =
+            registerBlock("aluminum_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)

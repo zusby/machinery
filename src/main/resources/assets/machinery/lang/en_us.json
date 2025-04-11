@@ -5,5 +5,8 @@
   "block.machinery.electrical_furnace_block": "Electrical Furnace",
   "item.machinery.tin_ingot": "Tin Ingot",
   "item.machinery.aluminum_ingot": "Aluminum Ingot",
-  "item.machinery.raw_aluminum": "Raw Aluminum"
+  "item.machinery.raw_aluminum": "Raw Aluminum",
+  "block.machinery.aluminum_ore": "Aluminum Ore",
+  "creativetab.machinery.machinery_mod_items_tab": "Machinery Items/Blocks",
+  "block.machinery.aluminum_block": "Aluminum Block"
 }
