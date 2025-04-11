@@ -3,6 +3,8 @@ package it.github.machinery.Blocks;
 import it.github.machinery.Items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.level.BlockCollisions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,11 +19,19 @@ public class ModBlocks {
 
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("machinery");
+
     public static final DeferredBlock<Block> ELECTRICAL_FURNACE =
             registerBlock("electrical_furnace_block",
                     ()->new Block(BlockBehaviour.Properties.of()
                             .mapColor(MapColor.METAL)
-                            .sound(SoundType.ANVIL)));
+                            .sound(SoundType.VAULT)));
+
+    public static final DeferredBlock<Block> ALUMINUM_ORE =
+            registerBlock("aluminum_ore", ()->new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+            ));
 
     public static void register(IEventBus eventbus){
         BLOCKS.register(eventbus);

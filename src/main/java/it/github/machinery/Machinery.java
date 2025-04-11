@@ -115,8 +115,15 @@ public class Machinery
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
             event.accept(blocco_di_prova_ITEM);
 
-        if(event.getTabKey()== CreativeModeTabs.BUILDING_BLOCKS){
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ELECTRICAL_FURNACE);
+            event.accept(ModBlocks.ALUMINUM_ORE);
+        }
+
+
+        if (event.getTabKey()== CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.ALUMINUM_INGOT);
+            event.accept(ModItems.RAW_ALUMINUM);
         }
     }
 

@@ -2,5 +2,7 @@
   "itemGroup.machinery": "Example Mod Tab",
   "block.machinery.blocco_di_prova": "Blocco di esempio",
   "item.machinery.example_item": "Example Item",
-  "block.machinery.electrical_furnace_block": "Electrical Furnace"
+  "block.machinery.electrical_furnace_block": "Electrical Furnace",
+  "item.machinery.aluminum_ingot": "Aluminum Ingot",
+  "item.machinery.raw_aluminum": "Raw Aluminum"
 }
