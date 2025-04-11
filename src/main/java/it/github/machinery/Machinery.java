@@ -125,6 +125,11 @@ public class Machinery
             event.accept(ModItems.ALUMINUM_INGOT);
             event.accept(ModItems.RAW_ALUMINUM);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.TIN_INGOT);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
